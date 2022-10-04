@@ -22,7 +22,6 @@ namespace la_mia_pizzeria_static.Controllers
         public IActionResult Detail(int id)
         {
             
-
             return View(Pizzas()[id]);
         }
 
@@ -30,10 +29,10 @@ namespace la_mia_pizzeria_static.Controllers
         {
             List<Pizza> pizze = new List<Pizza> {
 
-                new Pizza("Margherita", "Pomodoro, Mozzarella", "/img/pizza-margherita.jpg", 5),
-                new Pizza("Diavola", "Pomodoro, Mozzarella, salame piccante", "/img/pizza-diavola.jpg", 7),
-                new Pizza("Marinara", "Pomodoro", "/img/pizza-margherita.jpg", 4),
-                new Pizza("Salsiccia", "Pomodoro, Mozzarella, salsiccia", "/img/pizza-margherita.jpg", 7),
+                new Pizza(0, "Margherita", "Pomodoro, Mozzarella", "/img/pizza-margherita.jpg", 5),
+                new Pizza(1, "Diavola", "Pomodoro, Mozzarella, salame piccante", "/img/pizza-diavola.jpg", 7),
+                new Pizza(2, "Marinara", "Pomodoro", "/img/pizza-margherita.jpg", 4),
+                new Pizza(3, "Salsiccia", "Pomodoro, Mozzarella, salsiccia", "/img/pizza-margherita.jpg", 7),
 
             };
 
