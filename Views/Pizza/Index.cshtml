@@ -1,0 +1,24 @@
+﻿@{  
+    Layout = "_Layout";
+
+    @model List<Pizza>
+}
+
+    <h1>Le pizze:</h1>
+
+    @foreach(Pizza pizza in Model){
+
+<div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="@pizza.Image" alt="@pizza.Name">
+    <div class="card-body">
+            <h5 class="card-title">Pizza: @pizza.Name</h5>
+            <p class="card-text">Ingredienti: @pizza.Description</p>
+            <p class="card-text">Ingredienti: @pizza.Price</p>
+    </div>
+</div>
+
+}
+
+   
+    
+      
