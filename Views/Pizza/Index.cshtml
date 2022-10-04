@@ -6,7 +6,7 @@
     bool isEmpty = !Model.Any();
 }
 
-    <h1 class="my-4"cl>Le pizze:</h1>
+<h1 class="my-4"cl>Le pizze:</h1>
 
 <div class="d-flex">
 
@@ -17,11 +17,12 @@
     {
 
         <div class="card mx-2" style="width: 15rem;">
-            <img class="card-img-top" src="@pizza.Image" alt="@pizza.Name">
+            <img class="card-img-top" style="height: 160px" src="@pizza.Image" alt="@pizza.Name">
             <div class="card-body">
                 <h5 class="card-title">Pizza: @pizza.Name</h5>
                 <p class="card-text">Ingredienti: @pizza.Description</p>
                 <p class="card-text">Ingredienti: @pizza.Price</p>
+                        <a href="@Url.Action("Detail", new {id = 0})" class="btn btn-primary">Vedi dettaglio</a>
             </div>
         </div>
 
@@ -29,8 +30,8 @@
     }else{
             <h3>Non ci sono pizze da mostrare</h3>
     }
-</div>
 }
+</div>
    
     
       

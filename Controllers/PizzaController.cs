@@ -15,6 +15,19 @@ namespace la_mia_pizzeria_static.Controllers
 
         public IActionResult Index()
         {
+
+            return View(Pizzas());
+        }
+
+        public IActionResult Detail(int id)
+        {
+            
+
+            return View(Pizzas()[id]);
+        }
+
+        public List<Pizza> Pizzas()
+        {
             List<Pizza> pizze = new List<Pizza> {
 
                 new Pizza("Margherita", "Pomodoro, Mozzarella", "/img/pizza-margherita.jpg", 5),
@@ -24,11 +37,10 @@ namespace la_mia_pizzeria_static.Controllers
 
             };
 
-            return View(pizze);
+            return pizze;
         }
 
-
-        public IActionResult Privacy()
+            public IActionResult Privacy()
         {
             return View();
         }
